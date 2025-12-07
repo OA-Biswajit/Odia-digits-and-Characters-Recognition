@@ -34,16 +34,15 @@ Odia_project/
 ├── ImgToCsv.ipynb              # Image to CSV conversion
 ├── test2.ipynb                 # Model training and evaluation
 ├── model.keras                 # Trained model file
+├── history.json                # Training history
+├── odia_label.csv              # Character-to-label mapping
+├── odia_label1.csv             # Alternative label mapping
 ├── data/                        # Original dataset (57 classes)
 ├── new_data/                   # Augmented dataset
 ├── new_train/                  # Training data (split)
 ├── new_test/                   # Testing data (split)
 ├── train/                       # Alternative training split
-├── test/                        # Alternative test split
-├── array_data.csv              # Raw array data
-├── new_data.csv                # Converted image data
-├── odia_label.csv              # Character-to-label mapping
-└── history.json                # Training history
+└── test/                        # Alternative test split
 ```
 
 ## Dataset
@@ -255,11 +254,8 @@ The model generates:
 |------|---------|
 | `model.keras` | Pre-trained CNN model (inference-ready) |
 | `history.json` | Training history with metrics per epoch |
-| `new_data.csv` | Flattened augmented image data |
-| `array_data.csv` | Raw array format of images |
 | `odia_label.csv` | Mapping of class indices to Odia characters |
 | `odia_label1.csv` | Alternative label mapping |
-| `Result.xlsx` | Summary results and performance metrics |
 | `LICENSE` | Project license information |
 
 ## How to Make Predictions
@@ -299,7 +295,7 @@ print(f"Confidence: {confidence:.2%}")
 
 ## Author
 
-**Biswajit Das** (OA-Biswajit)
+**Biswajit Kumar Senapati** (OA-Biswajit)
 
 ## License
 
